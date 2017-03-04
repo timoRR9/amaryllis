@@ -1,0 +1,70 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable" >
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left" >
+        <div style="height: 100%;background-color: #62C954;border-radius: 0px;">
+          <div style="float: left;"><button class="button button-icon button-clear ion-navicon" menu-toggle="left" style="color:white;margin-top: 5px;margin-left: 3px;"></button></div>
+          <div style="float: left;padding-top: 12px;padding-left: 7px;padding-right: 18px;color:white">AMARYLLIS FLEURS</div>
+        </div>
+      </ion-nav-buttons>
+
+      <ion-nav-buttons side="right">
+        <img src="../img/export/IcoCart.png" ng-click="modal.show();getTotalCart();" style="height: 20px;position: absolute;top: 48%;transform: translateY(-50%);left: 10%;">
+        <div style="background-color: rgb(53, 160, 39);font-size: 10px;border-radius: 10px;color: white;position: absolute;left: 50%;top: 10%;height: 15px;width: 15px;text-align: center;line-height: 15.5px"
+          ng-if="Data.cart" ng-click="modal.show();getTotalCart();">
+          {{Data.cart.length}}
+        </div>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <div class="menu-title">Menu</div>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <!-- <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item> -->
+        <ion-item menu-close href="#/app/store">
+          <div class="menu-item-col-left">
+            <img src="../img/export/IcoFlower.png" class="menu-item-img" />
+          </div>
+          <div class="menu-item-col-right">
+            Notre boutique
+          </div>
+        </ion-item>
+        <ion-item menu-close href="#/app/events">
+          <div class="menu-item-col-left">
+            <img src="../img/export/IcoEvent.png" class="menu-item-img"/>
+          </div>
+          <div class="menu-item-col-right">
+            Evenements
+          </div>
+        </ion-item>
+        <ion-item menu-close href="#/app/services">
+          <div class="menu-item-col-left">
+            <img src="../img/export/IcoServices.png" class="menu-item-img" style="width: 30px"/>
+          </div>
+          <div class="menu-item-col-right">
+            Nos services
+          </div>
+        </ion-item>
+        <ion-item menu-close href="#/app/contact">
+          <div class="menu-item-col-left">
+            <img src="../img/export/IcoContact.png" class="menu-item-img"/>
+          </div>
+          <div class="menu-item-col-right">
+            Nous contacter
+          </div>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,10 @@
+{
+  "name": "contactFleur",
+  "app_id": "4b802e67",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost/amaryllisApi/v1/"
+    }
+  ]
+}

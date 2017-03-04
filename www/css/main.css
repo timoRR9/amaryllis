@@ -1,0 +1,137 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../font/Montserrat-Bold.ttf);
+}
+
+
+/* ############## Common ############## */
+
+body{
+  font-family: Montserrat-Regular;
+}
+
+.label-login input {
+  padding-left: 30px;
+}
+
+.lessMarB {
+  margin-bottom: -3em;
+}
+
+.noMarg{
+  margin: 0px;
+}
+
+.row.unlimited-items .col{
+  -webkit-flex: none;
+  width: 50%;
+  margin-bottom: -3em;
+}
+
+.row.unlimited-items {
+  -webkit-flex-wrap: wrap;
+}
+
+.amary{
+  background-color: #64BD57;
+  color: white;
+}
+
+.input-label {
+  width: 65%;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+#storeCallToAction{
+  width: 94.5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #64BD57;
+  margin-bottom: 2px;
+  color: white;
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  text-align: left;
+}
+
+#home-burger{
+  background-color: #64BD57;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80%;
+}
+
+.popup-buttons .button:last-child {
+  background-color: #64BD57;
+}
+
+/* ############### Nav-bar ############### */
+
+.bar .title + .button:last-child, .bar > .button + .button:last-child, .bar > .button.pull-right, .bar .buttons.pull-right, .bar .title + .buttons {
+  width: 35px;
+}
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+  background: white;
+  padding-left: 0;
+  padding: 0;
+  border-bottom: solid 1px #D8D8D8
+}
+
+.bar.bar-stable .title {
+  color:black;
+}
+
+.bar-stable .button.button-clear {
+  color:black;
+}
+
+.bar.bar-stable {
+  background: #64BD57;
+}
+
+
+/* ############### Menu ############### */
+
+.menu-title{
+  color: #FFFFFF;
+  padding-top: 7px;
+  font-size: 18px;
+  font-family: Montserrat-Regular;
+  padding-left: 7px;
+}
+
+.menu-item-col-right{
+  float: left;
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+.menu-item-col-left{
+  float: left;
+}
+
+.menu-item-img{
+  width: 25px;
+}
+
+.menu-item-icon{
+  font-size: 30px;
+  color: #64BD57;
+}
+
+.menu-item-chevron{
+  color: #64BD57;
+  font-size: 20px !important;
+}
+
+
+

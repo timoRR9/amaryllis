@@ -1,0 +1,38 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header" style="background-color: #64BD57;">
+      <h1 class="title" style="font-family:Montserrat-Regular;color:white !important;">MON PANIER</h1>
+      <button class="button button-clear button-primary" ng-click="modal.hide()"  style="color:white !important;">
+        <img src="../img/export/IcoClose.png">
+      </button>
+    </ion-header-bar>
+    <ion-content>
+      <div ng-if="Data.cart.length > 0">
+        <div class="item item-avatar" ng-repeat="product in Data.cart">
+          <img src="img/{{product.image}}.jpg" style="width: 50px;">
+          <h2>{{product.nom}}</h2>
+          <p>Prix : {{product.prix}} euro</p>
+          <a class="button button-icon icon ion-trash-a" ng-click="removeOfCart(product);" style="position: absolute;right: 4%;top: 48%;transform: translateY(-50%);"></a>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            Total : {{total}} euro
+          </div>
+        </div>
+
+        <button class="product-button" ng-click="prepareToPayFromCart();" style="position: fixed;bottom: 0px;">
+          <div class="product-button-center">
+            <div style="float: left"><i class="ion-card" style=" font-size: 25px"></i></div>
+            <div class="product-button-text">COMMANDER</div>
+          </div>
+        </button>
+
+      <div ng-if="Data.cart.length === 0"  style="height:80%;width:100%;padding-top: 40%; text-align: center">
+
+          <i class="ion-bag" style="font-size: 130px;color:grey"></i>
+          <h2 class="title" style="font-size: 25px;color:grey">Votre pannier est vide</h2>
+
+      </div>
+
+    </ion-content>
+  </ion-modal-view>

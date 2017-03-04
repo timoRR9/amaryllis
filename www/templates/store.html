@@ -1,0 +1,28 @@
+<ion-view  cache-view="false" can-swipe-back="false">
+  <ion-content ng-init="GetProducts();" style="background-color: #f9f9f9">
+   <!-- <button class="button button-block" id="storeCallToAction">
+      Nos sélections pour chaque occasion <i class="ion-chevron-right" style="float: right;margin-top: 1px"></i>
+    </button>-->
+    <div class="row unlimited-items lessMarB">
+      <div class="col" ng-repeat="produit in produits track by $index">
+        <a href="#/app/store/{{produit.nom}}" style="color: #676767;">
+        <div class="list card noMarg">
+          <div class="item item-body">
+              <img class="full-image store-img" src="img/{{produit.image}}.jpg">
+          </div>
+          <div class="item" style="padding: 8px">
+            <div style="float:left;font-size: 12px">
+
+                {{produit.nom}}
+
+            </div>
+            <div style="float:right;font-size: 14px;color: #64BD57">
+              {{produit.prix}} <i class="ion-social-euro"></i>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

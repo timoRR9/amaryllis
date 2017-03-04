@@ -1,0 +1,29 @@
+<ion-view>
+  <ion-content ng-init="wrongRoad();">
+
+    <form id="payment-form" ng-controller="StripeController" >
+      <span class="payment-errors"></span>
+      <span class="payment-errors"></span>
+      <div class="list list-inset">
+        <label class="item item-input" style="width: 65%;float: left;">
+          <i class="icon ion-card placeholder-icon"></i>
+          <input type="number" placeholder="Card Number" data-stripe="number" ng-model="number" style="padding-left: 10px;padding-right: 0;">
+        </label>
+        <label class="item item-input" style="width: 35%;float: left;">
+          <i class="icon ion-locked placeholder-icon"></i>
+          <input type="number" placeholder="CVC" data-stripe="cvc" ng-model="cvc" style="padding-left: 10px;padding-right: 0;">
+        </label>
+        <label class="item item-input" style="width: 50%;float: left;">
+          <i class="icon ion-calendar placeholder-icon"></i>
+          <input type="number" placeholder="MM" data-stripe="exp-month" ng-model="month" style="padding-left: 10px;padding-right: 0;">
+        </label>
+        <label class="item item-input" style="width: 50%;float: left;">
+          <i class="icon ion-calendar placeholder-icon"></i>
+          <input type="number" placeholder="AA" data-stripe="exp-year" ng-model="year" style="padding-left: 10px;padding-right: 0;">
+        </label>
+      </div>
+      <button class="button icon ion-card button-outline  button-balanced" ng-if="Data.cart.length > 0" ng-click="paiementFromCart();" style="display:block;margin-left:auto;margin-right:auto;width: 40%;"> Valider</button>
+    </form>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view can-swipe-back="false">
+  <ion-content ng-init="wrongRoad();GetProduct();">
+    <div class="list card" ng-if="Data.order" ng-repeat="product in currentProduct">
+        <div class="item item-button-right">
+          <h2>{{product.nom}}</h2>
+          <p>Prix : {{product.prix}} euro</p>
+        </div>
+        <div class="item item-image">
+          <img src="img/{{product.image}}.jpg">
+        </div>
+    </div>
+
+    <div class="list card" ng-repeat="product in Data.cart" ng-if="Data.cart">
+      <div class="item item-button-right">
+        <h2>{{product.nom}}</h2>
+        <p>Prix : {{product.prix}} euro</p>
+      </div>
+      <div class="item item-image">
+        <img src="img/{{product.image}}.jpg">
+      </div>
+    </div>
+
+    <button class="button icon ion-home button-outline  button-balanced" ng-click="emptyStorage();" style="display:block;margin-left:auto;margin-right:auto;width: 40%;"> Accueil</button>
+
+  </ion-content>
+</ion-view>

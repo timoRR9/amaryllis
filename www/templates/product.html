@@ -1,0 +1,46 @@
+<ion-view>
+  <ion-content ng-init="GetProduct();">
+    <div class="list card" ng-repeat="product in currentProduct">
+      <div class="item" >
+        <img class="full-image product-main-img" ng-src="img/{{product.image}}.jpg" >
+      </div>
+      <div class="item item-body product-body">
+        <div class="product-body-title">{{product.nom}}</div>
+        <p class="product-body-subtitle">
+          {{product.description}}
+        </p>
+        <ul class="product-body-detail">
+          <li>Rose vif, elle exprime l'insouciance de la jeunesse.</li>
+          <li>Le rose rose, elle exprime la tendresse et la douceur.</li>
+          <li>Naturel, le vert est traditionnellement associé à l'espoir et à la chance.</li>
+          <li>Fleurs fraîches garanties. Chaque bouquet est unique</li>
+        </ul>
+
+        <div class="fresh-container">
+          <div class="row">
+            <div class="fresh-container-col-left" ;">
+              <img src="../img/export/IcoFresh.png" class="fresh-container-img">
+            </div>
+            <div class="fresh-container-col-right">
+              <span class="fresh-container-text"><b>Bouquets uniques, fraicheur garantie</b></span><br>
+              Chaque bouquet est préparé à la main dans notre atelier. La livraison préserve la fraicheur des bouquets.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="product-button" ng-click="addToCart(product);">
+      <div class="product-button-center">
+        <div style="float: left"><img src="../img/export/add_cart.png"></div>
+        <div class="product-button-text">AJOUTER AU PANIER</div>
+      </div>
+    </button>
+
+    <!--<div class="row">
+      <div class="col col-50">
+        <button class="button icon ion-card button-outline  button-balanced" ng-click="prepareToPay(product);" style="float: left;font-size: 13px;width: 100%;"> Commander</button>
+      </div>
+    </div>-->
+  </ion-content>
+</ion-view>

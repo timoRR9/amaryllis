@@ -1,0 +1,72 @@
+<ion-view>
+  <ion-content ng-init="wrongRoad();">
+    <div class="card">
+      <div class="item item-divider amary">
+        Commanditaire
+      </div>
+      <div class="item item-text-wrap">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Nom *</span>
+            <input type="text" placeholder="John Smith" id="nom_acheteur">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Téléphone *</span>
+            <input type="text" placeholder="06 32 24 56 54" id="telephone_acheteur">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Email *</span>
+            <input type="text" placeholder="johnsmith@gmail.com" id="mail_acheteur">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider amary">
+        Destinataire
+      </div>
+      <div class="item item-text-wrap">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Nom *</span>
+            <input type="text" placeholder="John Smith" id="nom_destinataire">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Adresse *</span>
+            <input type="text" placeholder="48 avenue Jean Jaures" id="adresse_destinataire">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Ville *</span>
+            <input type="text" placeholder="Paris" id="ville_destinataire">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">CP *</span>
+            <input type="text" placeholder="75012" id="cp_destinataire">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Téléphone *</span>
+            <input type="text" placeholder="06 32 24 56 54" id="telephone_destinataire">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Date de livraison *</span>
+            <input type="date" id="date_livraison">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Heure de livraison</span>
+            <input type="text" placeholder="18h30" id="horaire_livraison">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Message</span>
+            <textarea placeholder="Comments" style="height: 70px;" id="message"></textarea>
+          </label>
+        </div>
+      </div>
+    </div>
+    <center>
+      <a href="#/app/paiement"><button class="button amary"> <i class="ion-checkmark-round"></i> Valider</button></a>
+    </center>
+    <br>
+
+  </ion-content>
+</ion-view>

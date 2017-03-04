@@ -1,0 +1,28 @@
+<ion-view>
+  <ion-content>
+    <div class="list card">
+      <div class="item item-avatar">
+        <h2>MOLAVY Timothé</h2>
+        <p>48 rue championnet - 75018 Paris</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="img/Tendresse.jpg">
+        <p>
+          <b>Message :</b><br>
+          Félicitations pour tes examens ! Pleins de bisous
+          Samantha
+        </p>
+        <p>
+          <a href="#" class="subdued">09/12/2016</a>
+          <a href="#" class="subdued">25e</a>
+          <a href="#" class="subdued" ng-click="showPopup()" style="float: right;"><button>Payer</button></a>
+        </p>
+      </div>
+    </div>
+
+    <script id="popup-template.html" type="text/ng-template">
+      <input ng-model="data.wifi" type="text" placeholder="Password">
+    </script>
+  </ion-content>
+</ion-view>

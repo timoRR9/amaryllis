@@ -1,0 +1,23 @@
+<ion-view>
+  <ion-content ng-init="GetProductsByEvent();">
+    <div class="row unlimited-items lessMarB">
+      <div class="col" ng-repeat="produit in productsByEvent | filter:{event: eventName}">
+        <a href="#/app/store/{{produit.nom}}" style="color: #676767;" ng-click="selectProduct(product)">
+          <div class="list card noMarg">
+            <div class="item item-body">
+              <img class="full-image store-img" src="img/{{produit.image}}.jpg">
+            </div>
+            <div class="item" style="padding: 8px">
+              <div style="float:left;font-size: 12px">
+                {{produit.nom}}
+              </div>
+              <div style="float:right;font-size: 14px;color: #64BD57">
+                {{produit.prix}} <i class="ion-social-euro"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
